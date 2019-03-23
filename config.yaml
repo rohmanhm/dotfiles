@@ -1,0 +1,43 @@
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: dotfiles
+  ignoreempty: false
+  keepdot: false
+  link_by_default: false
+  longkey: false
+  showdiff: false
+  workdir: ~/.config/dotdrop
+dotfiles:
+  d_fish:
+    dst: ~/.config/fish
+    src: config/fish
+  d_iterm2:
+    dst: ~/.iterm2
+    src: iterm2
+  d_omf:
+    dst: ~/.config/omf
+    src: config/omf
+  f_bashrc:
+    dst: ~/.bashrc
+    src: bashrc
+  f_gitconfig:
+    dst: ~/.gitconfig
+    src: gitconfig
+  f_hyper.js:
+    dst: ~/.hyper.js
+    src: hyper.js
+  f_zshrc:
+    dst: ~/.zshrc
+    src: zshrc
+profiles:
+  rohmans-MacBook-Pro.local:
+    dotfiles:
+    - f_zshrc
+    - d_fish
+    - d_omf
+    - f_hyper.js
+    - f_gitconfig
+    - d_iterm2
+    - f_bashrc
